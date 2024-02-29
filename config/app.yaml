@@ -1,0 +1,27 @@
+server:
+  ginMode: debug # debug|release|test
+  port: 9000
+
+log:
+  debug: true
+  maxSize: 200
+  maxAge: 30
+  maxBackup: 15
+  localTime: true
+  compress: false
+
+db:
+  driver: sqlite
+  dsn: app.db
+  maxIdleCount: 100
+  maxOpenCount: 100
+
+redis:
+  addr: 127.0.0.1:6379
+  password:
+  db: 0
+  dialTimeout: 30
+  readTimeout: 30
+  writeTimeout: 30
+  poolSize: 50
+  poolTimeout: 30
